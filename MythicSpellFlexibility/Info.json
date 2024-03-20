@@ -1,0 +1,12 @@
+﻿{
+  "Id": "MythicSpellFlexibility",
+  "DisplayName": "Mythic Spell Flexibility",
+  "Author": "AlterAsc",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.25.0",
+  "Requirements": [],
+  "AssemblyName": "MythicSpellFlexibility.dll",
+  "EntryMethod": "MythicSpellFlexibility.Main.Load",
+  "HomePage": "https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/601",
+  "Repository": "https://raw.githubusercontent.com/alterasc/MythicSpellFlexibility/main/Repository.json"
+}

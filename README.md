@@ -1,0 +1,1 @@
+# Mythic Spell Flexibility mod for Pathfinder: Wrath of the Righteous
