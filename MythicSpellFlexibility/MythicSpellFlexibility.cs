@@ -7,9 +7,6 @@ using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.Utility;
-using Owlcat.Runtime.Core.Utils;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace MythicSpellFlexibility;
 
@@ -22,7 +19,7 @@ public class MythicSpellFlexibility : UnitFactComponentDelegate,
     ISubscriber
 {
     private static readonly BlueprintGuid DeceiverSpellBook = Utils.ParseToBPGuid("587066af76a74f47a904bb017697ba08");
-    
+
     public override void OnTurnOn()
     {
         RefreshKnownSpells();
@@ -70,7 +67,7 @@ public class MythicSpellFlexibility : UnitFactComponentDelegate,
         {
             foreach (ClassData classData in this.Owner.Progression.Classes)
             {
-                if (classData.Spellbook != null && !classData.Spellbook.IsMythic 
+                if (classData.Spellbook != null && !classData.Spellbook.IsMythic
                     && classData.Spellbook.AssetGuid != DeceiverSpellBook)
                 {
                     Spellbook spellbook = this.Owner.Descriptor.GetSpellbook(classData.Spellbook);
